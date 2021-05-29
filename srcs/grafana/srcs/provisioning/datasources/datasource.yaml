@@ -1,0 +1,12 @@
+apiVersion: 1
+
+datasources:
+  - name: InfluxDB
+    type: influxdb
+    access: proxy
+    database: telegraf
+    user: bhankey
+    password: bhankey
+    url: http://influxdb-service:8086
+    jsonData:
+      httpMode: GET
